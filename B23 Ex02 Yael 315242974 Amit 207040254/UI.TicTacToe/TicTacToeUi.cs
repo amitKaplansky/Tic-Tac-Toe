@@ -44,7 +44,7 @@ class TicTacToeUi
             return false;
 
         o_row = int.Parse(input);
-        
+        Console.WriteLine();
         return true;   
     }
     private void initGame()
