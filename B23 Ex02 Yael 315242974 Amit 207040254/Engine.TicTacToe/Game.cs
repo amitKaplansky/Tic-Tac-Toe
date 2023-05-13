@@ -43,7 +43,7 @@ public class Game
     }
 
 
-    public bool InitislizeGame(ref int i_BoardSize, ref bool i_IsComputer)
+    public bool InitislizeGame(int i_BoardSize, bool i_IsComputer)
     {
         // todo add exception??
         if (i_BoardSize < 3 || i_BoardSize > 9)
