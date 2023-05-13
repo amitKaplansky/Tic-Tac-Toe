@@ -98,6 +98,9 @@ class TicTacToeUi
     private bool isInputValid(String i_input, bool i_checkPlayerType)
     {
         //check input is int
+        if(i_input.Equals(""))
+            return false;
+
         foreach (char c in i_input)
             if (!char.IsDigit(c))
                 return false;
