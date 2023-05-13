@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "UI.TicTacToe/1.0.0": {
         "dependencies": {
-          "Engine.TicTacToe": "1.0.0"
+          "Engine.TicTacToe": "1.0.0",
+          "Ex02.ConsoleUtils": "1.0.0.0"
         },
         "runtime": {
           "UI.TicTacToe.dll": {}
@@ -17,6 +18,14 @@
       "Engine.TicTacToe/1.0.0": {
         "runtime": {
           "Engine.TicTacToe.dll": {}
+        }
+      },
+      "Ex02.ConsoleUtils/1.0.0.0": {
+        "runtime": {
+          "Ex02.ConsoleUtils.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -29,6 +38,11 @@
     },
     "Engine.TicTacToe/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ex02.ConsoleUtils/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
