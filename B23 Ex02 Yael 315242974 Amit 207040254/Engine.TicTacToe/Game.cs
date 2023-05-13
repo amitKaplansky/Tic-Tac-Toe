@@ -50,6 +50,7 @@ public class Game
             return false; // chagne this to execption
 
         createBoard(i_BoardSize);
+
         this.m_Player1 = new Player(Symbol.X, PlayerType.Human);
         this.m_Player2 = i_IsComputer ? new Player(Symbol.O, PlayerType.Computer) : new Player(Symbol.O, PlayerType.Human);
 
@@ -111,10 +112,10 @@ public class Game
     private void clearBoard()
     {
         // todo add exception??
-
-        for (int i = 0; i < m_Board.Length; i++)
+        
+        for (int i = 0; i < m_Board.GetLength(1); i++)
         {
-            for(int j = 0; j < m_Board.Length; j++)
+            for(int j = 0; j < m_Board.GetLength(0) ; j++)
             {
                 m_Board[i, j] = Symbol.Empty;
             }
@@ -127,11 +128,11 @@ public class Game
     public Symbol[,] CopyBoard()
     {
         // todo add exception??
-        Symbol[,] boardToCopy = new Symbol[m_Board.Length, m_Board.Length];
+        Symbol[,] boardToCopy = new Symbol[m_Board.GetLength(1), m_Board.GetLength(0)];
 
-        for(int i = 0; i < m_Board.Length; i++)
+        for(int i = 0; i < m_Board.GetLength(1); i++)
         {
-            for(int j = 0; j < m_Board.Length; j++)
+            for(int j = 0; j < m_Board.GetLength(0); j++)
             {
                 boardToCopy[i, j] = m_Board[i, j];
             }

@@ -5,7 +5,7 @@ namespace Engine.TicTacToe
 	{
 		X,
 		O,
-		Empty
+		Empty 
 	}
 }
 
