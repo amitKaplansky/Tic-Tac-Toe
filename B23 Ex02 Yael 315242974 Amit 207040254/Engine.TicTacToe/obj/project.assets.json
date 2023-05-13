@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/amitkaplansky/Projects/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/Engine.TicTacToe.csproj",
+      "projectUniqueName": "/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/Engine.TicTacToe.csproj",
       "projectName": "Engine.TicTacToe",
-      "projectPath": "/Users/amitkaplansky/Projects/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/Engine.TicTacToe.csproj",
+      "projectPath": "/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/Engine.TicTacToe.csproj",
       "packagesPath": "/Users/amitkaplansky/.nuget/packages/",
-      "outputPath": "/Users/amitkaplansky/Projects/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/obj/",
+      "outputPath": "/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/amitkaplansky/.nuget/NuGet/NuGet.Config"
@@ -55,6 +55,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
