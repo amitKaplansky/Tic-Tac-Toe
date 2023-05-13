@@ -7,7 +7,6 @@ namespace UI.TicTacToe;
 
 class TicTacToeUi
 {
-   
     Engine.TicTacToe.Game m_game = new Engine.TicTacToe.Game();
     public void PlayGame()
     {
@@ -53,7 +52,7 @@ class TicTacToeUi
         int boardSize;
         bool PlayerTowIsComputer;
 
-        Console.WriteLine("Welcome to TicTacTock!");
+        Console.WriteLine("Welcome to TicTacToce!");
         Console.WriteLine("Please enter the size of the board you want(need to be more then 3 and less then 9):");
         
         input = getValidInpt();
