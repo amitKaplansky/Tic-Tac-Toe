@@ -1,8 +1,11 @@
 ﻿using System;
 namespace Engine.TicTacToe
 {
-	public enum PlayerSymbol
+	public enum Symbol
 	{
+		X,
+		O,
+		Empty
 	}
 }
 
