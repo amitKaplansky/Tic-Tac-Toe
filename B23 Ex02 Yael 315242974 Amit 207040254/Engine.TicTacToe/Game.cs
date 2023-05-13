@@ -7,15 +7,11 @@ public class Game
 {
 
     private Symbol[,]? m_Board = null;
-
     private int? m_EmptySquarsInBoard = null;
- 
     private Player? m_Player1 = null;
     private Player? m_Player2 = null;
-
     private bool m_PlayerTurn = false; // false = player1 turn, true = player2 turn
-
-   
+    private List<String> m_freeSquars = null;
     private bool makeMove(int i_row, int i_col)
     {
         // add exception
@@ -27,7 +23,6 @@ public class Game
         m_Board[i_row, i_col] = squareSymbol;
         m_EmptySquarsInBoard--;
         
-
         return true;
     }
    
@@ -64,10 +59,9 @@ public class Game
 
     private void createBoard(int i_BoardSize)
     {
-        
         this.m_Board = new Symbol[i_BoardSize, i_BoardSize];
+        initFreeSquars(i_BoardSize);
         clearBoard();
-
     }
 
     public bool IsGameOver(int i_row, int i_col)
@@ -146,5 +140,43 @@ public class Game
 
         m_PlayerTurn = m_PlayerTurn ? false : true;
         return true;
+    }
+
+    public void computerMove()
+    {
+        bool squereAvailabel = false;
+        int row, col, index;
+
+        index = generateRandomNumber(1, m_freeSquars.Count);
+        string squar = m_freeSquars[index];
+        string[] squarIndex = squar.Split(',');
+        row = int.Parse(squarIndex[0]);
+        col = int.Parse(squarIndex[1]);
+
+        m_Board[row, col] = m_Player2.Value.Symbol;//?
+        removeTakenSquar(row,col);
+
+    }
+    private int generateRandomNumber(int i_minValue, int i_maxValue)
+    {
+        Random random = new Random();
+        return random.Next(i_minValue, i_maxValue);//maybe need add 1 to maxValue
+    }
+
+    private void initFreeSquars(int i_boarsSize)
+    {
+        m_freeSquars = new List<string>(i_boarsSize * i_boarsSize);
+        for(int i = 0; i< i_boarsSize;i++)
+            for(int j = 0; j < i_boarsSize; j++)
+            {
+                string squar = i + "," + j;
+                m_freeSquars.Add(squar);
+            }
+    }
+
+    private void removeTakenSquar(int i_row, int i_col)
+    {
+        string squar = i_row + "," + i_col;
+        m_freeSquars.Remove(squar);
     }
 }

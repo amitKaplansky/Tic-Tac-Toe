@@ -53,3 +53,4 @@ C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254
 C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.pdb
 C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.genruntimeconfig.cache
 C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\ref\UI.TicTacToe.dll
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\bin\Debug\net7.0\Ex02.ConsoleUtils.dll

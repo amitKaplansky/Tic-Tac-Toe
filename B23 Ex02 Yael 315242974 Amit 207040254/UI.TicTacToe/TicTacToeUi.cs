@@ -3,7 +3,7 @@ using System.Data.Common;
 using System.Drawing;
 using System.Security.Cryptography;
 using Engine.TicTacToe;
-
+using Ex02.ConsoleUtils;
 namespace UI.TicTacToe;
 
 class TicTacToeUi
@@ -14,15 +14,16 @@ class TicTacToeUi
        
         String input ="";
         int col = 0 , row = 0;
-        bool isHummen = true, validMove; 
+        bool isHummen = false, validMove; 
         initGame();
         Console.WriteLine("Let's start play,\nFY if you want to exit press 'Q'.");
         while (!input.Equals("Q"))
         {
+            Screen.Clear();//nned to think about sleep is the next move is a computer...
             //CHECK THAT IF THE PLAYER IS HUMEN
-         /*   if (isHummen)
+            if (isHummen)
             {
-                if (!getValidRowAndColumn(ref row, ref col))
+                if(!getValidRowAndColumn(ref row, ref col))
                     break;
 
                validMove =  m_game.NextMove(row, col);
@@ -30,16 +31,15 @@ class TicTacToeUi
 
             else
             {
-                validMove = m_game.NextMove();
-
+                m_game.computerMove();
+                validMove = true;
             }
 
             if (!validMove)
                 Console.WriteLine("Invalid move please try again");
-         */
+         
             printBoard();
 
-            input = "Q";
         }
 
     }
@@ -83,35 +83,46 @@ class TicTacToeUi
     }
     private String getValidInpt(bool i_checkPlayerType = false)
     {
-        String input = "";
+        String input = "" ,errorMessage ="";
         bool validInput = false;
 
         while (!validInput)
         {
             input = Console.ReadLine();
-            validInput = isInputValid(input, i_checkPlayerType);
+            validInput = isInputValid(input, i_checkPlayerType, ref errorMessage);
             if (!validInput)
-                Console.WriteLine("Your input is invalid please try again.");
+                Console.WriteLine(errorMessage);
         }
         return input;
     }
-    private bool isInputValid(String i_input, bool i_checkPlayerType)
+    private bool isInputValid(String i_input, bool i_checkPlayerType, ref string o_errorMessage)
     {
         //check input is int
-        if(i_input.Equals(""))
+        if (i_input.Equals(""))
+        {
+            o_errorMessage = "You must enter input and then press enter, Try again.";
             return false;
-
+        }
         foreach (char c in i_input)
             if (!char.IsDigit(c))
+            {
+                o_errorMessage = "Invalid input, your Input must only contain numbers, Try again.";
                 return false;
+            }
 
         if (i_checkPlayerType)
         {
             if (i_input.Length != 1)
+            {
+                o_errorMessage = "In this section you must enter only one digit, Try again.";
                 return false;
-
+            }
             char digit = i_input[0];
-            return (digit == '1' || digit == '2');
+            if(digit != '1' && digit != '2')
+            {
+                o_errorMessage = "You can only enter the digit 1 or 2, Try again.";
+                return false;
+            }
         }
 
         return true;
@@ -140,7 +151,7 @@ class TicTacToeUi
             for (int j = 0; j < size; j++)
             {
                 if (board[i, j] != Symbol.Empty)
-                    Console.Write(board[i, j] + " |");
+                    Console.Write(board[i, j] + "  |");
                 else
                     Console.Write("   |");
                 
