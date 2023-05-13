@@ -2,27 +2,44 @@ using System;
 using System.Data.Common;
 using System.Drawing;
 using System.Security.Cryptography;
+using Engine.TicTacToe;
 
 namespace UI.TicTacToe;
 
 class TicTacToeUi
 {
-    Engine.TicTacToe.Game m_game = new Engine.TicTacToe.Game();
+    Game m_game = new Engine.TicTacToe.Game();
     public void PlayGame()
     {
        
         String input ="";
-        int column = 0 , row = 0;
-
+        int col = 0 , row = 0;
+        bool isHummen = true, validMove; 
         initGame();
         Console.WriteLine("Let's start play,\nFY if you want to exit press 'Q'.");
         while (!input.Equals("Q"))
         {
-            if (!getValidRowAndColumn(ref row, ref column))
-                break;
+            //CHECK THAT IF THE PLAYER IS HUMEN
+         /*   if (isHummen)
+            {
+                if (!getValidRowAndColumn(ref row, ref col))
+                    break;
 
-           
+               validMove =  m_game.NextMove(row, col);
+            }
 
+            else
+            {
+                validMove = m_game.NextMove();
+
+            }
+
+            if (!validMove)
+                Console.WriteLine("Invalid move please try again");
+         */
+            printBoard();
+
+            input = "Q";
         }
 
     }
@@ -85,7 +102,7 @@ class TicTacToeUi
             if (!char.IsDigit(c))
                 return false;
 
-        if (!i_checkPlayerType)
+        if (i_checkPlayerType)
         {
             if (i_input.Length != 1)
                 return false;
@@ -102,5 +119,35 @@ class TicTacToeUi
         else
             return false;
     
+    }
+
+    private void printBoard()
+    {
+        Symbol[,] board = m_game.CopyBoard();
+        int size = board.GetLength(0);
+
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write("  " + (i + 1) +" ");
+        }
+        Console.Write("\n");
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write((i + 1) + "|");
+            for (int j = 0; j < size; j++)
+            {
+                if (board[i, j] != Symbol.Empty)
+                    Console.Write(board[i, j] + " |");
+                else
+                    Console.Write("   |");
+                
+            }
+            Console.Write("\n");
+
+            for (int k = 0; k < size; k++)
+                Console.Write("====");
+
+            Console.Write("=\n");
+        }
     }
 }
