@@ -1,11 +1,33 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Engine.TicTacToe/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Engine.TicTacToe.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Engine.TicTacToe.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Engine.TicTacToe/1.0.0": {
+      "type": "project",
+      "path": "../Engine.TicTacToe/Engine.TicTacToe.csproj",
+      "msbuildProject": "../Engine.TicTacToe/Engine.TicTacToe.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Engine.TicTacToe >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Yal barak\\.nuget\\packages\\": {},
@@ -15,11 +37,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\Engine.TicTacToe.csproj",
-      "projectName": "Engine.TicTacToe",
-      "projectPath": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\Engine.TicTacToe.csproj",
+      "projectUniqueName": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\UI.TicTacToe\\UI.TicTacToe.csproj",
+      "projectName": "UI.TicTacToe",
+      "projectPath": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\UI.TicTacToe\\UI.TicTacToe.csproj",
       "packagesPath": "C:\\Users\\Yal barak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\obj\\",
+      "outputPath": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\UI.TicTacToe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -41,7 +63,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\Engine.TicTacToe.csproj": {
+              "projectPath": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\Engine.TicTacToe.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -75,13 +101,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

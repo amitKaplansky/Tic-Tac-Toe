@@ -1,0 +1,55 @@
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/bin/Debug/net7.0/appsettings.Development.json
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/bin/Debug/net7.0/appsettings.json
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/bin/Debug/net7.0/UI.TicTacToe
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/bin/Debug/net7.0/UI.TicTacToe.deps.json
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/bin/Debug/net7.0/UI.TicTacToe.runtimeconfig.json
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/bin/Debug/net7.0/UI.TicTacToe.dll
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/bin/Debug/net7.0/UI.TicTacToe.pdb
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/UI.TicTacToe.csproj.AssemblyReference.cache
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/UI.TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/UI.TicTacToe.AssemblyInfoInputs.cache
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/UI.TicTacToe.AssemblyInfo.cs
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/UI.TicTacToe.csproj.CoreCompileInputs.cache
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/UI.TicTacToe.MvcApplicationPartsAssemblyInfo.cache
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/staticwebassets/msbuild.UI.TicTacToe.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/staticwebassets/msbuild.build.UI.TicTacToe.props
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.UI.TicTacToe.props
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.UI.TicTacToe.props
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/staticwebassets.build.json
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/staticwebassets.development.json
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/scopedcss/bundle/UI.TicTacToe.styles.css
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/UI.TicTacToe.dll
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/refint/UI.TicTacToe.dll
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/UI.TicTacToe.pdb
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/UI.TicTacToe.genruntimeconfig.cache
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/Debug/net7.0/ref/UI.TicTacToe.dll
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\bin\Debug\net7.0\appsettings.json
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\bin\Debug\net7.0\UI.TicTacToe.exe
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\bin\Debug\net7.0\UI.TicTacToe.deps.json
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\bin\Debug\net7.0\UI.TicTacToe.runtimeconfig.json
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\bin\Debug\net7.0\UI.TicTacToe.dll
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\bin\Debug\net7.0\UI.TicTacToe.pdb
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\bin\Debug\net7.0\Engine.TicTacToe.dll
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\bin\Debug\net7.0\Engine.TicTacToe.pdb
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.csproj.AssemblyReference.cache
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.AssemblyInfoInputs.cache
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.AssemblyInfo.cs
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\staticwebassets\msbuild.UI.TicTacToe.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\staticwebassets\msbuild.build.UI.TicTacToe.props
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UI.TicTacToe.props
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.UI.TicTacToe.props
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\scopedcss\bundle\UI.TicTacToe.styles.css
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.csproj.CopyComplete
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.dll
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\refint\UI.TicTacToe.dll
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.pdb
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\UI.TicTacToe.genruntimeconfig.cache
+C:\Users\Yal barak\Desktop\C#\Tic-Tac-Toe\B23 Ex02 Yael 315242974 Amit 207040254\UI.TicTacToe\obj\Debug\net7.0\ref\UI.TicTacToe.dll

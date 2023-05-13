@@ -43,7 +43,7 @@ public class Game
     }
 
 
-    public bool InitislizeGame(int i_BoardSize, bool i_IsComputer)
+    public bool InitislizeGame(ref int i_BoardSize, ref bool i_IsComputer)
     {
         // todo add exception??
         if (i_BoardSize < 3 || i_BoardSize > 9)
@@ -96,13 +96,15 @@ public class Game
         int howManyRow = m_Board.Length;
         Symbol squareSymbol = m_PlayerTurn ? m_Player2.Value.Symbol : m_Player1.Value.Symbol;
 
-
+        return true;
     }
 
     private bool checkPotentialcolWin(int i_col)
     {
         int howManyInCol = m_Board.Length;
         Symbol squareSymbol = m_PlayerTurn ? m_Player2.Value.Symbol : m_Player1.Value.Symbol;
+
+        return true;
     }
 
 

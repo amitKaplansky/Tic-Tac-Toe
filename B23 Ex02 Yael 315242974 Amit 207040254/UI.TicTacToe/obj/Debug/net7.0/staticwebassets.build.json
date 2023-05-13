@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "62woDdQM7sQg3dlErkCNPJzrpmdOiXVRO7NKdxJR73s=",
+  "Source": "UI.TicTacToe",
+  "BasePath": "_content/UI.TicTacToe",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\Engine.TicTacToe.csproj",
+      "Version": 2,
+      "Source": "Engine.TicTacToe",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
