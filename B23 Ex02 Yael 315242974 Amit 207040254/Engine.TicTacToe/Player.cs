@@ -32,7 +32,7 @@ namespace Engine.TicTacToe
             }
             set
             {
-                m_Score = value;
+                m_Score += value;
             }
         }
 
@@ -44,6 +44,13 @@ namespace Engine.TicTacToe
                 return m_PlayerType;
             }
         }
+
+        public void updateScore()
+        {
+            m_Score++;
+        }
+
+        
     }
 }
 

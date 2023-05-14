@@ -23,3 +23,8 @@ C:/Users/Yal barak/Desktop/C#/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254
 /Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/obj/Debug/net7.0/Engine.TicTacToe.dll
 /Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/obj/Debug/net7.0/refint/Engine.TicTacToe.dll
 /Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/obj/Debug/net7.0/Engine.TicTacToe.pdb
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/obj/Debug/net7.0/Engine.TicTacToe.csproj.AssemblyReference.cache
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/obj/Debug/net7.0/Engine.TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/obj/Debug/net7.0/Engine.TicTacToe.AssemblyInfoInputs.cache
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/obj/Debug/net7.0/Engine.TicTacToe.AssemblyInfo.cs
+/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/obj/Debug/net7.0/Engine.TicTacToe.csproj.CoreCompileInputs.cache

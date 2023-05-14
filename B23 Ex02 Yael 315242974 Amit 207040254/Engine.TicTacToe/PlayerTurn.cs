@@ -1,8 +1,10 @@
 ﻿using System;
 namespace Engine.TicTacToe
 {
-	public enum EmptyEnumeration
+	public enum PlayerTurn
 	{
+		Player1,
+		Player2,
 	}
 }
 
