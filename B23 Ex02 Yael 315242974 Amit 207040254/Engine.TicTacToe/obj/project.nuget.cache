@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pDb7MFP24+0DNwdH+fmNGsp5DCIuZg3Gmnb+TcMSnwBSW585nVDL+zJQUkf+4MBVtpTKjiWameQ3sm1ZnIWXiw==",
+  "dgSpecHash": "ZchuHIKCSZehheu61a1lU0BLWS4F6L8njwUVhjR7i6ft61bRA1qqhx8wIeWepAR5G6uR/mDOWQeWA+1LbtUCsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\Engine.TicTacToe.csproj",
+  "projectFilePath": "/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/Engine.TicTacToe.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
