@@ -3,7 +3,7 @@ using System.Data.Common;
 using System.Drawing;
 using System.Security.Cryptography;
 using Engine.TicTacToe;
-//using Ex02.ConsoleUtils;
+using Ex02.ConsoleUtils;
 namespace UI.TicTacToe;
 
 class TicTacToeUi
@@ -17,37 +17,41 @@ class TicTacToeUi
         bool validMove = false , isGameOver = false;
 
         isGameOver = initGame();
-
+        
         Console.WriteLine("Let's start to play Reversed Tic Tac Toe,\nFY if you want to exit press 'Q'.");
 
         while (!input.Equals("Q") && !isGameOver)
         {
-            //Screen.Clear();//nned to think about sleep is the next move is a computer...
+            Screen.Clear();
+                //sleep?
             //CHECK THAT IF THE PLAYER IS HUMEN
             printBoard();
 
             if (!m_game.IsPlayerTurnIsComputer())
             {
-                isGameOver = getValidRowAndCol(ref row, ref col);
-
-                if (isGameOver)
+                do
                 {
-                    break;
-                }
-                
-                validMove = m_game.NextMove(row, col);
-                
+                    isGameOver = getValidRowAndCol(ref row, ref col);
+
+                    if (isGameOver)
+                    {
+                        break;
+                    }
+
+
+                    validMove = m_game.NextMove(row - 1, col - 1);
+
+                    if (!validMove)
+                        Console.WriteLine("Invalid move please try again");
+
+                } while (!validMove);
             }
             else
             { 
                 m_game.NextMove();
             }
-
-            if (!validMove)
-                Console.WriteLine("Invalid move please try again");
-         
-
-            if(m_game.DidPlayerLose(row, col))
+             
+            if(m_game.DidPlayerLose(row - 1 , col - 1))
             {
                 playerLost();
                     
@@ -77,6 +81,7 @@ class TicTacToeUi
         string input;
         bool continuePlaying = false;
 
+        Console.WriteLine("The game ent with a tie");
         Console.WriteLine("Would you like to continue playing? y/n");
 
         do
@@ -127,7 +132,7 @@ class TicTacToeUi
         Console.WriteLine("Welcome to TicTacToe!");
         Console.WriteLine("Please enter the size of the board you want (the size most be between 3 - 9):");
         
-        input = getValidInput();
+        input = getValidInput(false, true);
 
         if (input == "Q")
         {
@@ -154,13 +159,14 @@ class TicTacToeUi
             {
                 PlayerTwoIsComputer = parseInputToBool(input);
                 m_game.InitPlayers(PlayerTwoIsComputer);
+               
             }
         }
 
         return isGameOver;
     }
 
-    private String getValidInput(bool i_CheckPlayerType = false)
+    private String getValidInput(bool i_CheckPlayerType = false,bool i_InitGame = false)
     {
         String input = "" ,errorMessage = "";
         bool validInput = false;
@@ -175,7 +181,7 @@ class TicTacToeUi
         return input;
     }
 
-    private bool isValidInput(String i_Input, bool i_CheckPlayerType, ref string o_ErrorMessage)
+    private bool isValidInput(String i_Input, bool i_CheckPlayerType, ref string o_ErrorMessage, bool i_InitGame = false)
     {
         if (i_Input.Equals(""))
         {
@@ -206,7 +212,7 @@ class TicTacToeUi
         }
         else
         {
-            if (!m_game.IsBoardSizeValid(int.Parse(i_Input)))
+            if (!m_game.IsBoardSizeValid(int.Parse(i_Input)) && i_InitGame)
             {
                 o_ErrorMessage = "The size is out of range between 3 - 9, Try again.";
                 return false;
@@ -228,31 +234,33 @@ class TicTacToeUi
     private void printBoard()
     {
         Symbol[,] board = m_game.CopyBoard();
-
-        int size = board.GetLength(0);
-
-        for (int i = 0; i < size; i++)
+        if (board != null)
         {
-            Console.Write("  " + (i + 1) +" ");
-        }
-        Console.Write("\n");
-        for (int i = 0; i < size; i++)
-        {
-            Console.Write((i + 1) + "|");
-            for (int j = 0; j < size; j++)
+            int size = board.GetLength(0);
+
+            for (int i = 0; i < size; i++)
             {
-                if (board[i, j] != Symbol.Empty)
-                    Console.Write(board[i, j] + "  |");
-                else
-                    Console.Write("   |");
-                
+                Console.Write("  " + (i + 1) + " ");
             }
             Console.Write("\n");
+            for (int i = 0; i < size; i++)
+            {
+                Console.Write((i + 1) + "|");
+                for (int j = 0; j < size; j++)
+                {
+                    if (board[i, j] != Symbol.Empty)
+                        Console.Write(board[i, j] + "  |");
+                    else
+                        Console.Write("   |");
 
-            for (int k = 0; k < size; k++)
-                Console.Write("====");
+                }
+                Console.Write("\n");
 
-            Console.Write("=\n");
+                for (int k = 0; k < size; k++)
+                    Console.Write("====");
+
+                Console.Write("=\n");
+            }
         }
     }
 }

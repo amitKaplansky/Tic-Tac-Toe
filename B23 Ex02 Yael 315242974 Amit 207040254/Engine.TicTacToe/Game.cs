@@ -100,7 +100,7 @@ public class Game
 
     public bool IsBoardSizeValid(int i_BoardSize)
     {
-
+        return i_BoardSize >= 3 && i_BoardSize <= 9;
     }
 
     public void InitPlayers(bool i_IsComputer)
@@ -117,12 +117,11 @@ public class Game
 
     private void createBoard(int i_BoardSize)
     {
-        if (m_Board != null)
-        {
-            this.m_Board = new Symbol[i_BoardSize, i_BoardSize];
-            initFreeSquars();
-            clearBoard();
-        }
+
+        this.m_Board = new Symbol[i_BoardSize, i_BoardSize];
+        initFreeSquars();
+        clearBoard();
+
     }
 
     public bool DidPlayerLose(int i_Row, int i_Col)
@@ -180,7 +179,7 @@ public class Game
 
             for (int i = 0; i < m_Board.GetLength(0); i++)
             {
-                if (m_Board[i, m_Board.GetLength(0) - i] == i_SymbolToCheck)
+                if (m_Board[i, m_Board.GetLength(0) - i -1] == i_SymbolToCheck)
                     howManyInDiagonal--;
             }
 
