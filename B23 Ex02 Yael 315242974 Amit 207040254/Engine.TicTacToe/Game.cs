@@ -5,6 +5,8 @@ namespace Engine.TicTacToe;
 
 public class Game
 {
+    private const int k_MinBoardSize = 3;
+    private const int k_MaxBoardSize = 9;
 
     private Symbol[,]? m_Board = null;
     private int? m_EmptySquarsInBoard = null;
@@ -46,10 +48,22 @@ public class Game
 
         createBoard(i_BoardSize);
 
-        this.m_Player1 = new Player(Symbol.X, PlayerType.Human);
-        this.m_Player2 = i_IsComputer ? new Player(Symbol.O, PlayerType.Computer) : new Player(Symbol.O, PlayerType.Human);
 
         return true;
+    }
+    public bool InitBoard(int i_BoardSize)
+    {
+        if (i_BoardSize < k_MinBoardSize || i_BoardSize > k_MaxBoardSize)
+            return false;
+
+        createBoard(i_BoardSize);
+
+        return true;
+    }
+    public void InitPlayers(bool i_IsComputer)
+    {
+        this.m_Player1 = new Player(Symbol.X, PlayerType.Human);
+        this.m_Player2 = i_IsComputer ? new Player(Symbol.O, PlayerType.Computer) : new Player(Symbol.O, PlayerType.Human);
     }
 
     public void RestartGame()
