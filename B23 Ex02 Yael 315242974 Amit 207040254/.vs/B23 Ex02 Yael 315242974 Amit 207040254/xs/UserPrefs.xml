@@ -1,28 +1,38 @@
-﻿<Properties StartupConfiguration="{5FC242B2-A8F2-44D7-82D6-969218936AF3}|https">
+﻿<Properties StartupConfiguration="{49DD6295-6C0F-439B-9D97-AAE3599924CE}|http">
+  <MonoDevelop.Ide.ItemProperties.UI.Reverse.TicTacToe PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Engine.TicTacToe/Game.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UI.TicTacToe/UI.cs">
     <Files>
-      <File FileName="UI.TicTacToe/TicTacToeUi.cs" Line="1" Column="1" />
-      <File FileName="Engine.TicTacToe/Game.cs" Line="23" Column="71" />
+      <File FileName="Engine.TicTacToe/Game.cs" Line="10" Column="1" />
+      <File FileName="Engine.TicTacToe/PlayerTurn.cs" Line="6" Column="10" />
+      <File FileName="Engine.TicTacToe/Player.cs" Line="20" Column="12" />
+      <File FileName="Engine.TicTacToe/PlayerType.cs" Line="5" Column="2" />
+      <File FileName="UI.TicTacToe/TicTacToeUi.cs" Line="171" Column="1" />
+      <File FileName="UI.TicTacToe/Program.cs" Line="12" Column="1" />
+      <File FileName="Engine.TicTacToe/Symbol.cs" Line="11" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="B23 Ex02 Yael 315242974 Amit 207040254" expanded="True">
-            <Node name="Engine.TicTacToe" expanded="True">
-              <Node name="Game.cs" selected="True" />
-            </Node>
-            <Node name="UI.TicTacToe" expanded="True" />
+            <Node name="Engine.Reverse.TicTacToe" expanded="True" />
+            <Node name="UI.Reverse.TicTacToe" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.UI.TicTacToe FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/UI.cs" relfile="UI.TicTacToe/UI.cs" line="27" column="1" />
+      <Breakpoint file="/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/Program.cs" relfile="UI.TicTacToe/Program.cs" line="10" column="1" />
+      <Breakpoint file="/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/UI.cs" relfile="UI.TicTacToe/UI.cs" line="24" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Engine.TicTacToe FirstBuild="True" PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.Engine.Reverse.TicTacToe PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
 </Properties>

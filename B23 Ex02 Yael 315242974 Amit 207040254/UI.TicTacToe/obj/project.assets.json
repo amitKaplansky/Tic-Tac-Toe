@@ -2,14 +2,14 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "Engine.TicTacToe/1.0.0": {
+      "Engine.Reverse.TicTacToe/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/Engine.TicTacToe.dll": {}
+          "bin/placeholder/Engine.Reverse.TicTacToe.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Engine.TicTacToe.dll": {}
+          "bin/placeholder/Engine.Reverse.TicTacToe.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -18,54 +18,44 @@
     }
   },
   "libraries": {
-    "Engine.TicTacToe/1.0.0": {
+    "Engine.Reverse.TicTacToe/1.0.0": {
       "type": "project",
-      "path": "../Engine.TicTacToe/Engine.TicTacToe.csproj",
-      "msbuildProject": "../Engine.TicTacToe/Engine.TicTacToe.csproj"
+      "path": "../Engine.TicTacToe/Engine.Reverse.TicTacToe.csproj",
+      "msbuildProject": "../Engine.TicTacToe/Engine.Reverse.TicTacToe.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Engine.TicTacToe >= 1.0.0"
+      "Engine.Reverse.TicTacToe >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yal barak\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/amitkaplansky/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\UI.TicTacToe\\UI.TicTacToe.csproj",
-      "projectName": "UI.TicTacToe",
-      "projectPath": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\UI.TicTacToe\\UI.TicTacToe.csproj",
-      "packagesPath": "C:\\Users\\Yal barak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\UI.TicTacToe\\obj\\",
+      "projectUniqueName": "/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/UI.Reverse.TicTacToe.csproj",
+      "projectName": "UI.Reverse.TicTacToe",
+      "projectPath": "/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/UI.Reverse.TicTacToe.csproj",
+      "packagesPath": "/Users/amitkaplansky/.nuget/packages/",
+      "outputPath": "/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/UI.TicTacToe/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Yal barak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/amitkaplansky/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\Engine.TicTacToe.csproj": {
-              "projectPath": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\Engine.TicTacToe.csproj"
+            "/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/Engine.Reverse.TicTacToe.csproj": {
+              "projectPath": "/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/Engine.Reverse.TicTacToe.csproj"
             }
           }
         }
@@ -98,7 +88,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }

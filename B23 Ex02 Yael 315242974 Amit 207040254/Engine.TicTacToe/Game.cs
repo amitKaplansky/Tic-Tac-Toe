@@ -1,20 +1,21 @@
 using System;
 
 
-namespace Engine.TicTacToe;
+namespace Engine.Reverse.TicTacToe;
 
 public class Game
 {
     private const int k_MinBoardSize = 3;
     private const int k_MaxBoardSize = 9;
-    private Symbol[,]? m_Board = null;
+    private eBoardSymbols[,]? m_Board = null;
     private int? m_EmptySquarsInBoard = null;
-    private Player? m_Player1 = null;
-    private Player? m_Player2 = null;
-    private PlayerTurn m_PlayerTurn = PlayerTurn.Player1; 
+    private Player m_Player1;
+    private Player m_Player2;
+    private ePlayerTurn m_PlayerTurn = ePlayerTurn.Player1; 
     private List<String> m_freeSquars = null;
+    private int[] m_LastMove = new int[2];
 
-    public PlayerTurn PlayerTurn
+    public ePlayerTurn PlayerTurn
     {
         get 
         {
@@ -24,34 +25,41 @@ public class Game
 
     public int Player1Score()
     {
-        return m_Player1 != null ? m_Player1.Value.Score : -1;
+        return  m_Player1.Score;
     }
 
     public int Player2Score()
     {
-        return m_Player2 != null ? m_Player2.Value.Score : -1;
+        return m_Player2.Score;
     }
 
     public bool IsPlayerTurnIsComputer()
     {
-        return m_PlayerTurn == PlayerTurn.Player2 && m_Player2.Value.PlayerType == PlayerType.Computer;
+        return m_PlayerTurn == ePlayerTurn.Player2 && m_Player2.PlayerType == ePlayerType.Computer;
     }
 
     public bool NextMove(int i_Row = -1, int i_Col = -1)
     {
-
-        if (m_PlayerTurn == PlayerTurn.Player2 && m_Player2.Value.PlayerType == PlayerType.Computer)
+        
+        if (m_PlayerTurn == ePlayerTurn.Player2 && m_Player2.PlayerType == ePlayerType.Computer)
         {
             computerMove(ref i_Row, ref i_Col);
         }
         else
         {
-            if (!isSquareInRange(i_Row, i_Col) || !isSquareAvailable(i_Row, i_Col))
+            i_Row--;
+            i_Col--;
+
+            if (!isSquareGood(i_Row, i_Col))
+            {
                 return false;
+            }
         }
 
         makeMove(i_Row, i_Col);
 
+        m_LastMove[0] = i_Row;
+        m_LastMove[1] = i_Col;
 
         return true;
     }
@@ -59,7 +67,7 @@ public class Game
     private void makeMove(int i_Row, int i_Col)
     {
 
-        Symbol squareSymbol = m_PlayerTurn == PlayerTurn.Player1 ? m_Player1.Value.Symbol : m_Player2.Value.Symbol;
+        eBoardSymbols squareSymbol = m_PlayerTurn == ePlayerTurn.Player1 ? m_Player1.Symbol : m_Player2.Symbol;
 
         m_Board[i_Row, i_Col] = squareSymbol;
 
@@ -70,21 +78,30 @@ public class Game
     }
    
 
-    private bool isSquareInRange(int i_Row, int i_Col)
+    private bool isSquareGood(int i_Row, int i_Col)
+    {
+        bool isSquareGood = true;
 
-    {   if (m_Board != null)
+        if (m_Board != null)
         {
-            return (i_Row >= 0 && i_Row < m_Board.Length) && (i_Col >= 0 && i_Row < m_Board.Length);
+            if ((i_Row >= 0 && i_Row < m_Board.GetLength(0)) && (i_Col >= 0 && i_Col < m_Board.GetLength(1)))
+            {
+                isSquareGood = isSquareAvailable(i_Row, i_Col);
+            }
+            else
+            {
+                isSquareGood = false;
+            }
         }
 
-        return false;
+        return isSquareGood;
     }
 
     private bool isSquareAvailable(int i_Row, int i_Col)
     {
         if (m_Board != null)
         {
-            return m_Board[i_Row, i_Col] == Symbol.Empty;
+            return m_Board[i_Row, i_Col] == eBoardSymbols.Empty;
         }
         return false;
     }
@@ -92,21 +109,25 @@ public class Game
 
     public bool InitBoard(int i_BoardSize)
     {
-        
-        createBoard(i_BoardSize);
+        bool boardSizeInRange;
 
-        return true;
-    }
+        if(i_BoardSize >= k_MinBoardSize && i_BoardSize <= k_MaxBoardSize)
+        {
+            createBoard(i_BoardSize);
+            boardSizeInRange = true;
+        }
+        else
+        {
+            boardSizeInRange = false;
+        }
 
-    public bool IsBoardSizeValid(int i_BoardSize)
-    {
-        return i_BoardSize >= 3 && i_BoardSize <= 9;
+        return boardSizeInRange;
     }
 
     public void InitPlayers(bool i_IsComputer)
     {
-        this.m_Player1 = new Player(Symbol.X, PlayerType.Human);
-        this.m_Player2 = i_IsComputer ? new Player(Symbol.O, PlayerType.Computer) : new Player(Symbol.O, PlayerType.Human);
+        this.m_Player1 = new Player(eBoardSymbols.X, ePlayerType.Human);
+        this.m_Player2 = i_IsComputer ? new Player(eBoardSymbols.O, ePlayerType.Computer) : new Player(eBoardSymbols.O, ePlayerType.Human);
     }
 
     public void RestartGame()
@@ -117,42 +138,43 @@ public class Game
 
     private void createBoard(int i_BoardSize)
     {
-
-        this.m_Board = new Symbol[i_BoardSize, i_BoardSize];
-        initFreeSquars();
-        clearBoard();
-
+        if (m_Board == null)
+        {
+            this.m_Board = new eBoardSymbols[i_BoardSize, i_BoardSize];
+            initFreeSquars();
+            clearBoard();
+        }
     }
 
-    public bool DidPlayerLose(int i_Row, int i_Col)
+    public bool DidPlayerLose()
     {
-        Symbol squareSymbol = m_PlayerTurn == PlayerTurn.Player1 ? m_Player1.Value.Symbol : m_Player2.Value.Symbol;
+        eBoardSymbols squareSymbol = m_PlayerTurn == ePlayerTurn.Player1 ? m_Player1.Symbol : m_Player2.Symbol;
         
         bool didPlayerlose = false;
 
-        if (i_Row == i_Col && diagonalWin(squareSymbol))
+        if (diagonalWin(squareSymbol))
         { 
             didPlayerlose = true;
         }
-        else if (rowWin(i_Row, squareSymbol) || colWin(i_Col, squareSymbol))
+        else if (rowWin(m_LastMove[0], squareSymbol) || colWin(m_LastMove[1], squareSymbol))
         {
             didPlayerlose = true;
         }
 
         if (didPlayerlose)
         {
-            if(m_Player1.Value.Symbol == squareSymbol)
+            if(m_Player1.Symbol == squareSymbol)
             {
-                m_Player2.Value.updateScore();
+                  m_Player2.Score = 1;
             }
             else
             {
-                m_Player1.Value.updateScore();
+                m_Player1.Score = 1;
             }
         }
         else
         {
-            m_PlayerTurn = m_PlayerTurn == PlayerTurn.Player1 ? PlayerTurn.Player2 : PlayerTurn.Player1;
+            m_PlayerTurn = m_PlayerTurn == ePlayerTurn.Player1 ? ePlayerTurn.Player2 : ePlayerTurn.Player1;
         }
 
         return didPlayerlose;
@@ -164,7 +186,7 @@ public class Game
         return m_EmptySquarsInBoard == 0;
     }
 
-    private bool diagonalWin(Symbol i_SymbolToCheck)
+    private bool diagonalWin(eBoardSymbols i_SymbolToCheck)
     {
         if (m_Board != null)
         {
@@ -180,7 +202,7 @@ public class Game
             for (int i = 0; i < m_Board.GetLength(0); i++)
             {
                 if (m_Board[i, m_Board.GetLength(0) - i -1] == i_SymbolToCheck)
-                    howManyInDiagonal--;
+                    howManyInReverseDiagonal--;
             }
 
             return howManyInDiagonal == 0 || howManyInReverseDiagonal == 0;
@@ -189,7 +211,7 @@ public class Game
         return false;
     }
 
-    private bool rowWin(int i_Row, Symbol i_SymbolToCheck)
+    private bool rowWin(int i_Row, eBoardSymbols i_SymbolToCheck)
     {
         if (m_Board != null)
         {
@@ -207,12 +229,12 @@ public class Game
         return false;
     }
 
-    private bool colWin(int i_Col, Symbol i_SymbolToCheck)
+    private bool colWin(int i_Col, eBoardSymbols i_SymbolToCheck)
     {
         if (m_Board != null)
         {
 
-            int howManyInCol = m_Board.Length;
+            int howManyInCol = m_Board.GetLength(1);
 
             for (int i = 0; i < m_Board.GetLength(1); i++)
             {
@@ -234,21 +256,21 @@ public class Game
             {
                 for (int j = 0; j < m_Board.GetLength(0); j++)
                 {
-                    m_Board[i, j] = Symbol.Empty;
+                    m_Board[i, j] = eBoardSymbols.Empty;
                 }
             }
 
-            m_EmptySquarsInBoard = m_Board.Length * m_Board.Length;
-            m_PlayerTurn = PlayerTurn.Player1;
+            m_EmptySquarsInBoard = m_Board.GetLength(0) * m_Board.GetLength(1);
+            m_PlayerTurn = ePlayerTurn.Player1;
         }
     }
 
     
-    public Symbol[,]? CopyBoard()
+    public eBoardSymbols[,]? CopyBoard()
     {
         if (m_Board != null)
         {
-            Symbol[,] boardToCopy = new Symbol[m_Board.GetLength(1), m_Board.GetLength(0)];
+            eBoardSymbols[,] boardToCopy = new eBoardSymbols[m_Board.GetLength(1), m_Board.GetLength(0)];
 
             for (int i = 0; i < m_Board.GetLength(1); i++)
             {
@@ -268,12 +290,14 @@ public class Game
     {
         bool squereAvailabel = false;
         int index;
-
-        index = generateRandomNumber(1, m_freeSquars.Count);
-        string squar = m_freeSquars[index];
-        string[] squarIndex = squar.Split(',');
-        o_Row = int.Parse(squarIndex[0]);
-        o_Col= int.Parse(squarIndex[1]);
+        if (m_freeSquars.Count > 0)
+        {
+            index = generateRandomNumber(1, m_freeSquars.Count);
+            string squar = m_freeSquars[index];
+            string[] squarIndex = squar.Split(',');
+            o_Row = int.Parse(squarIndex[0]);
+            o_Col = int.Parse(squarIndex[1]);
+        }
 
     }
 
