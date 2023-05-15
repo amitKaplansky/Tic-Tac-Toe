@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "eGJTi6spcJ4NeDxFaH0sMGOVgUZUEBh+OVkgmRaQze4=",
-  "Source": "Engine.TicTacToe",
-  "BasePath": "_content/Engine.TicTacToe",
+  "Hash": "ygFFVca8lADnjw4v35Lsrzl9x+m7YbqyfKE9xMV6Dv4=",
+  "Source": "Engine.Reverse.TicTacToe",
+  "BasePath": "_content/Engine.Reverse.TicTacToe",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

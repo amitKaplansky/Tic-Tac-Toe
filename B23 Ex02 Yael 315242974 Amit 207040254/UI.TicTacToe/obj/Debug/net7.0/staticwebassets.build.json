@@ -1,15 +1,15 @@
 {
   "Version": 1,
-  "Hash": "62woDdQM7sQg3dlErkCNPJzrpmdOiXVRO7NKdxJR73s=",
-  "Source": "UI.TicTacToe",
-  "BasePath": "_content/UI.TicTacToe",
+  "Hash": "J3K5KzNGnr8dOBDDHoqPZNTMXxHKds1oQvy/njlc50s=",
+  "Source": "UI.Reverse.TicTacToe",
+  "BasePath": "_content/UI.Reverse.TicTacToe",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Yal barak\\Desktop\\C#\\Tic-Tac-Toe\\B23 Ex02 Yael 315242974 Amit 207040254\\Engine.TicTacToe\\Engine.TicTacToe.csproj",
+      "Identity": "/Users/amitkaplansky/src/github.com/amitKaplansky/Tic-Tac-Toe/B23 Ex02 Yael 315242974 Amit 207040254/Engine.TicTacToe/Engine.Reverse.TicTacToe.csproj",
       "Version": 2,
-      "Source": "Engine.TicTacToe",
+      "Source": "Engine.Reverse.TicTacToe",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained",
